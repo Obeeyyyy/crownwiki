@@ -101,7 +101,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://discord.gg/crowndev',
+            href: 'https://discord.com/invite/bJQRV5GeZg',
             label: 'Discord',
             position: 'right',
           },
@@ -120,45 +120,31 @@ const config = {
             items: [
               {
                 label: 'CrownCore',
-                to: '/docs/crowncore',
+                to: '/docs/crowncore/intro',
               },
               {
                 label: 'License System',
-                to: '/docs/licensesystem',
-              },
-              {
-                label: 'FAQ',
-                to: '/faq',
+                to: '/docs/license/faq',
               },
             ],
           },
           {
-            title: 'Community',
+            
+          },
+          {
+            title: 'Links',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.com/invite/bJQRV5GeZg',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
+                label: 'BuiltByBit',
+                href: 'https://builtbybit.com/creators/obeeyyyy.427256/',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Obeeyyyy?tab=repositories',
               },
             ],
           },
