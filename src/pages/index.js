@@ -29,7 +29,7 @@ export default function Home() {
       description="Documentation for our Products and Services">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <h1>Work in Progress</h1>
       </main>
     </Layout>
   );
