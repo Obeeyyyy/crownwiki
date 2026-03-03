@@ -1,0 +1,8 @@
+{
+  "label": "Plugins",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Documentation for our plugins. Browse through our plugins and find out how to use them, how to configure and more."
+  }
+}

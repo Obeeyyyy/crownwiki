@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -58,7 +58,7 @@ const config = {
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
           createSitemapItems: async (params) => {
-            const {defaultCreateSitemapItems, ...rest} = params;
+            const { defaultCreateSitemapItems, ...rest } = params;
             const items = await defaultCreateSitemapItems(rest);
             return items.filter((item) => !item.url.includes('/page/'));
           },
@@ -82,19 +82,36 @@ const config = {
           src: 'img/crown.png',
         },
         items: [
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'crowncore',
+            type: 'dropdown',
+            label: 'Plugins',
             position: 'left',
-            label: 'CrownCore',
+            items: [
+              {
+                type: 'doc',
+                label: 'CrownCore',
+                docId: 'plugins/crowncore/intro',
+              },
+            ]
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'licensesystem',
+            type: 'dropdown',
+            label: 'Guides',
             position: 'left',
+            items: [
+              {
+                type: 'doc',
+                label: 'How to install a Plugin 101',
+                docId: 'guides/how-to-install-a-plugin-101',
+              },
+            ]
+          },
+          {
+            type: 'doc',
             label: 'License System',
+            docId: 'guides/license',
           },
-         // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/Obeeyyyy?tab=repositories',
             label: 'GitHub',
@@ -120,16 +137,16 @@ const config = {
             items: [
               {
                 label: 'CrownCore',
-                to: '/docs/crowncore/intro',
+                to: '/docs/plugins/crowncore/intro',
               },
               {
                 label: 'License System',
-                to: '/docs/license/faq',
+                to: '/docs/guides/license',
               },
             ],
           },
           {
-            
+
           },
           {
             title: 'Links',
@@ -152,8 +169,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Crown.`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        theme: prismThemes.gruvboxMaterialLight,
+        darkTheme: prismThemes.gruvboxMaterialDark,
       },
     }),
 };

@@ -41,37 +41,23 @@ number-formatting: "en_US"
 time-formats:
   default: "%hh%:%mm%:%ss%"   # the default format to use when nothing else is specified
   teleportation: "%ss%.%t%"   # the format for the teleportation messages
-
-redis:
-  enabled: false
-
-  host: "127.0.0.1"
-  port: 6379
-  username: ""          # leave empty if not using ACL users (default user)
-  password: ""          # leave empty if no auth
-
-  database: 0           # default db index (0–15 normally)
-  ssl: false            # true if your Redis requires TLS
-  timeout: 5000         # ms connect timeout
 ```
 
-### Explanation
+### What these values mean
+* `update-reminder` (G*): Either `true` or `false`. Toggles the update reminder for admins.
 
-* `update-reminder`
-  * Type: Boolean
-  * Toggles the update reminder for admins. This is a global setting*.
+* `debug-mode`: Either `true` or `false`. Toggles the debug mode for more console output. Can be toggled via command `/crowncore debug`.
 
-* `debug-mode`
-  * Type: Boolean
-  * Toggles the debug mode for more console output. Can be toggled via command /crowncore debug.
+* `data-cache-time` (G*): The time in ms player data will be kept in cache after leaving. This will probably be removed soon.
 
-* `data-cache-time`
-  * Type: long
-  * The time in ms player data will be kept in cache after leaving. This will probably be removed soon.
+* `teleport` (G*)
+  * `delay`: Is the duration for the teleportation in seconds.
+  * `message-type`: Options are: `bossbar` and `actionbar`. The place the teleport message with the remaining time will be shown.
 
-
-
+* `instant-teleport` (G*)
+  * `always`: Either `true` or `false`. With this enabled, all teleportations will always be instant, no animation.
+  * `worlds`: A [YAML Array](../../guides/yaml#yaml-array). Teleportations from worlds listed here will be instant.
 
 ### Legend
 
-> This is a global setting = A setting that is applied to all plugins using the core.
+> G* = A setting that is applied to all plugins using the core.

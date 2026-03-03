@@ -1,8 +1,8 @@
 ---
-sidebar_label: 'Intro'
-sidebar_position: 1
+sidebar_label: 'Everything about our license system'
+sidebar_position: 2
 title: ""
-description: "Frequently asked questions"
+description: "Everything about our license system"
 ---
 
 :::info
@@ -56,7 +56,7 @@ If you do not have a key yet, create a license ticket and ask for one.
 First, check if the plugin is enabled.
 
 - If it is **not enabled**, continue here:  
-  [How to install a plugin 101](how-to-install-a-plugin-101)
+  [How to install a plugin 101](../guides/how-to-install-a-plugin-101)
 
 Then reload the plugin and check the console output.
 
