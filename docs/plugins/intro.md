@@ -16,4 +16,4 @@ Join our discord to post suggestions, ask questions and participate in giveaways
 > You can then read more about each Plugin in the designated section.
 
 1. Our Plugins can not be re/loaded with Plugman or similar.
-2. All of our paid Plugins require a license key to work. Read abt the License System [here](../license/intro.md).
+2. All of our paid Plugins require a license key to work. Read abt the License System [here](../guides/license.md).

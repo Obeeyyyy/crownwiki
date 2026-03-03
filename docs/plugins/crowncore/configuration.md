@@ -56,7 +56,7 @@ time-formats:
 
 * `instant-teleport` (G*)
   * `always`: Either `true` or `false`. With this enabled, all teleportations will always be instant, no animation.
-  * `worlds`: A [YAML Array](../../guides/yaml#yaml-array). Teleportations from worlds listed here will be instant.
+  * `worlds`: A [YAML Array](../../guides/yaml#array). Teleportations from worlds listed here will be instant.
 
 ### Legend
 
