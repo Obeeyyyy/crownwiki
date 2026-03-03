@@ -105,6 +105,11 @@ const config = {
                 label: 'How to install a Plugin 101',
                 docId: 'guides/how-to-install-a-plugin-101',
               },
+              {
+                type: 'doc',
+                label: 'YAML 101',
+                docId: 'guides/yaml',
+              },
             ]
           },
           {
