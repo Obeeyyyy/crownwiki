@@ -11,7 +11,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Crown Wiki',
-  tagline: 'Documentation for our Products',
+  tagline: 'Documentation for our Plugins and other useful Minecraft server guides and resources.',
   favicon: 'img/crown.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
