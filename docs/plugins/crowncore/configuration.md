@@ -2,45 +2,35 @@
 sidebar_label: 'Configuration'
 sidebar_position: 2
 title: ""
-description: Into into CrownCore
+description: Default config.yml file for the CrownCore and their explanation.
 ---
 
 ### Default config.yml
 
 ```yaml title="config.yml"
-#
-# if you have any questions or suggestions, please do not hesitate and
-# join our discord: https://dsc.gg/crownplugins
-# we are there to assist you
-#
-
-# toggle the update reminder when joining (only players with permission see the reminder)
 update-reminder: true
 debug-mode: false
 
-# the time in ms a players data will stay in the cache after leaving
 data-cache-time: 3600000
 
 teleport:
-  delay: 5                # this is the teleport delay in s
-  message-type: bossbar   # message type: bossbar, actionbar
+  delay: 5              
+  message-type: bossbar  
 
-# these are case sensitive
 instant-teleport:
-  always: false       # set this to true if you don't want to use the teleport animation, also players in gmc will always be teleported without the animation
-  worlds: []          # players in these worlds will be teleported without a delay
-  regions: []         # players in these regions will be teleported without a delay
+  always: false      
+  worlds: []        
+  regions: []        
 
 cooldown:
-  message: 0       # cooldown before being able to send another chat message in milliseconds
-  command: 0       # cooldown before being able to send another command in milliseconds
+  message: 0      
+  command: 0     
 
-# set the language default for number formatting. EX: en-US -> 10,000.00
 number-formatting: "en_US"
 
 time-formats:
-  default: "%hh%:%mm%:%ss%"   # the default format to use when nothing else is specified
-  teleportation: "%ss%.%t%"   # the format for the teleportation messages
+  default: "%hh%:%mm%:%ss%"  
+  teleportation: "%ss%.%t%" 
 ```
 
 ### What these values mean
@@ -57,6 +47,30 @@ time-formats:
 * `instant-teleport` (G*)
   * `always`: Either `true` or `false`. With this enabled, all teleportations will always be instant, no animation.
   * `worlds`: A [YAML Array](../../guides/yaml#array). Teleportations from worlds listed here will be instant.
+  * `regions`: A [YAML Array](../../guides/yaml#array). Teleportations from [WorldGuard](https://dev.bukkit.org/projects/worldguard) Regions listed here will be instant.
+
+* `cooldown`
+  * `message`: An optional setting regulating the cooldown until players can send another chat message. This value is represented in milliseconds.
+  * `command`: An optional setting regulating the cooldown until players can send another command. This value is represented in milliseconds.
+
+* `number-formating` (G*): This option defines what local to use for number formating across our plugins. Example: `en_US -> 10,000.0` and `de_DE -> 10.000,0`.
+
+* `time-formats` (G*)
+  * `default`: This is the default time format the core will use if nothing else is specified.
+  * `teleportation`: This time format will be used in the teleportation messages.
+  
+  
+  `Most Plugins have a seperate time format configuration in their own configuration files.`
+  
+  > The doubles will basicly always show a minimum of 2 numbers. `Example:` `%dd%` with a value of 2 will show `02` where `%d%` would show the raw vlaue. 
+  
+  > **Available aliases**: 
+    * `%dd% %d%`: Days
+    * `%hh% %h%`: Hours
+    * `%mm% %m%`: Minutes
+    * `%ss% %s%`: Seconds
+    * `%SSS% %S%`: Milliseconds
+    * `%tt% %t%`: Remaining Decimals. `Example:` `%ss%.%t%s` for a value of `12900 ms` would show `12.9s`.
 
 ### Legend
 

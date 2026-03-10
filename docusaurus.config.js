@@ -83,7 +83,7 @@ const config = {
         },
         items: [
           // {to: '/blog', label: 'Blog', position: 'left'},
-          {
+          /*{
             type: 'dropdown',
             label: 'Plugins',
             position: 'left',
@@ -116,6 +116,10 @@ const config = {
             type: 'doc',
             label: 'License System',
             docId: 'guides/license',
+          },*/
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             href: 'https://github.com/Obeeyyyy?tab=repositories',

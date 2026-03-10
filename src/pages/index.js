@@ -1,11 +1,10 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import CrownHeader from '../components/CrownHeader';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -24,13 +23,8 @@ function HomepageHeader() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Documentation for our Products and Services">
-      <HomepageHeader />
-      <main>
-        <h1>Work in Progress</h1>
-      </main>
-    </Layout>
+    <div>
+      <CrownHeader />
+    </div>
   );
 }
