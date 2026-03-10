@@ -74,4 +74,4 @@ You can configure plugin specific values for what is mentioned above by simply a
 * `not-enough-money`: Sent whenever a player does not have enough money for an action. `%missing%` can be used to display the missing amount.
 
 ### Multi Line Messages
-> There are no multi line messages for teh CrownCore but these are key and [Array](../../guides/yaml#array) pairs.
+> There are no multi line messages for the CrownCore but these are key and [Array](../../guides/yaml#array) pairs.
