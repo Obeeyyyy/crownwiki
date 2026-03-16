@@ -76,6 +76,8 @@ gg-wave:
   enabled: false
   duration: 10 
   trigger-text: "gg" 
+  always-trigger: false
+  keep-original-message: false
   min-amount: 0
   design:
     type: RAINBOW
@@ -197,6 +199,8 @@ blacklist:
     * `enabled`: Either `true` or `false`. What it does should be clear.
     * `duration`: The duration of the GGWave in seconds.
     * `trigger-text`: The text players have to type to trigger in the GGWave. `all` can be used to allow any input.
+    * `always-trigger`: This will allow all messages sent to trigger a ggwave instead of just the allowed `tigger-text`.
+    * `keep-original-message`: This will keep the players message in the ggwave format instead of replacing it with `ggwave-message-text` from `messages.yml`.
     * `min-amount`: The minimum value a purchase has to have to trigger a GGWave.
     * `design`:
         * `type`: Either `rainbow`, `solid`, `solidrainbow`, `gradient`
